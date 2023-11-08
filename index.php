@@ -23,8 +23,6 @@
 
 
 
-
-
     <div class="text-center fs-1 fw-semibold">Iniciar sesión</div>
     <form action="login_registro/php/login.php" method="POST">
       <!--logo y campo de username -->
@@ -70,18 +68,18 @@
     </div>
 
     <!--or-->
-    <div class="p-3">
+    <!-- <div class="p-3">
       <div class="border-bottom text-center" style="height: 0.9rem">
         <span class="bg-white px-3">or</span>
       </div>
     </div>
 
-    <!--boton de google -->
+    
     <div class="btn d-flex gap-2 justify-content-center border mt-3 shadow-sm">
       <img src="login_registro/assets/google-icon.svg" alt="google-icon" style="height: 1.6rem" />
       <div class="fw-semibold text-secondary">Continuar con Google</div>
 
-    </div>
+    </div> -->
   </div>
 </body>
 

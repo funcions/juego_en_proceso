@@ -8,6 +8,7 @@ if(isset($_POST['loginn'])) {
 // Obtener los valores enviados por el formulario
 $usuario = $_POST['nombre_user'];
 $contrasena = $_POST['contrasena_user'];
+$message='';
 
 // Ejecutamos la consulta a la base de datos utilizando la función mysqli_query
 $sql = "SELECT * FROM login WHERE usuario = '$usuario' and password = '$contrasena'";
@@ -19,13 +20,8 @@ $numero_registros = mysqli_num_rows($resultado);
 		header('location: ../../navs/index.html');
 	} else {
 		// Credenciales inválidas
-		echo '<br><div class="alert alert-danger">Credenciales inválidas. Por favor, verifica tu nombre de usuario y/o contraseña ga</div>';
-		danger();
+		echo '<br><div class="alert alert-danger">Credenciales inválidas. Por favor, verifica tu nombre de usuario y/o contraseña </div>';
+	
 		//echo "Error: " . $sql . "<br>" . mysqli_error($conexion);
 	}
 }
-
-function danger(){
-	echo "<p>acces denegado</p>";
-}
-?>
