@@ -17,3 +17,10 @@ CREATE TABLE `anagrama` (
   `score` int,
   FOREIGN KEY (`id_usuario`) REFERENCES `login`(`id_login`)
 );
+
+/*
+-- muestra los usuarios con sus score
+SELECT login.usuario, anagrama.score
+FROM login
+JOIN anagrama ON login.id_login = anagrama.id_usuario;
+*/
