@@ -9,3 +9,10 @@ CREATE TABLE `login` (
   `email` varchar(120) 
   
 );
+
+CREATE TABLE `anagrama` (
+  `id_anagrama` int AUTO_INCREMENT PRIMARY KEY,
+  `id_usuario` int,
+		`score` int
+
+);
